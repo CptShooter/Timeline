@@ -1,0 +1,13 @@
+{
+    "name": "cptshooter/timeline",
+    "authors": [
+        {
+            "name": "Paweł Kiełt",
+            "email": "kieltpawel@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Timeline\\": "src/"}
+    },
+    "require": {}
+}

@@ -1,221 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Timeline</title>
-  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Games Premiere Timeline</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
+<?php require_once 'vendor/autoload.php'; ?>
+<?php $data = new \Timeline\Data(); ?>
+<?php $games = $data->sortGamesByDate()->getGames(); ?>
+
 <body>
-  
-<div class="tl-wrapper">
-  <ul class="timeline">
-    <li class="tl-item" data-year="1981">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1988">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1989">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1990">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1991">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1992">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1993">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1994">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1995">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1996">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1997">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1998">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="1999">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2000">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2001">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2002">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2003">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2004">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2005">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2006">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2007">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-    <li class="tl-item" data-year="2008">
-      <div class="tl-image"><img src=" http://placehold.it/1650x1000/"/></div>
-      <div class="tl-copy">
-        <h3 class="title">Aw, you're all Mr. Grumpy Face today. They're not aliens, they're Earth&hellip;liens!</h3>
-        <div class="tl-description">
-          <p>Aw, you're all Mr. Grumpy Face today. No&hellip; It's a thing; it's like a plan, but with more greatness. They're not aliens, they're Earth&hellip;liens! Sorry, checking all the water in this area; there's an escaped fish. All I've got to do is pass as an ordinary human being. Simple. What could possibly go wrong? You've swallowed a planet!</p>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <h2>Games Premiere Timeline</h2>
 
-    <script src="js/index.js"></script>
-
+<ul id='timeline'>
+    <?php $i = 0; ?>
+    <?php /** @var \Timeline\Game $game */ ?>
+    <?php foreach($games as $key => $game) { ?>
+  <li class='entry'>
+    <input <?php if ($i == 0) { ?>checked='checked'<?php } ?> class='radio' id='trigger<?=$key?>' name='trigger' type='radio'>
+    <label for='trigger<?=$key?>'>
+      <span>
+        <?=$game->getName()?>
+      </span>
+    </label>
+      <span class='date'><?=$game->getDate()->format('d.m.Y')?></span>
+    <span class='circle'></span>
+    <div class='content'>
+      <h3><?=$game->getName()?> (<?=$game->getDate()->format('d.m.Y')?>)</h3>
+        <img src="<?=$game->getImg()?>" alt="<?=$game->getName()?>">
+        <p>
+            <?=$game->getDescription()?>
+        </p>
+    </div>
+  </li>
+    <?php $i++ ?>
+    <?php } ?>
+</ul>
 </body>
 </html>
