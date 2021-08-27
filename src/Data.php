@@ -5,7 +5,8 @@ namespace Timeline;
 class Data
 {
     private array $games = [];
-    private string $filename = 'data/games.csv';
+    private string $filename = '../data/games.csv';
+    private array $jsonGames = [];
 
     public function __construct()
     {
@@ -42,11 +43,39 @@ class Data
         return $this;
     }
 
+    public function buildJson(): Data
+    {
+        $id = 0;
+        /** @var Game $game */
+        foreach($this->games as $game)
+        {
+
+            $json = [
+                'id' => $id,
+                'title' => $game->getName(),
+                'content' => $game->getDescription(),
+                'img' => $game->getImg(),
+                'start' => $game->getDate()->format('Y-m-d')
+            ];
+            $this->jsonGames[] = $json;
+            $id++;
+        }
+        return $this;
+    }
+
     /**
      * @return array
      */
     public function getGames() : array
     {
         return $this->games;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGamesToJson() : string
+    {
+        return json_encode($this->jsonGames, true);
     }
 }

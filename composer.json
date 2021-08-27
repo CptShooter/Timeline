@@ -9,5 +9,7 @@
     "autoload": {
         "psr-4": {"Timeline\\": "src/"}
     },
-    "require": {}
+    "require": {
+        "ext-json": "*"
+    }
 }
