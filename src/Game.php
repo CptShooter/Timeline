@@ -8,6 +8,7 @@ class Game
     private \DateTime $date;
     private string $description;
     private string $img;
+    private string $trailer;
 
     /**
      * @return string
@@ -71,5 +72,21 @@ class Game
     public function setImg(string $img): void
     {
         $this->img = $img;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTrailer(): string
+    {
+        return $this->trailer;
+    }
+
+    /**
+     * @param string $trailer
+     */
+    public function setTrailer(string $trailer): void
+    {
+        $this->trailer = $trailer;
     }
 }
