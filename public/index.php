@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style.css?ver={{hash('crc32', date('h:i:s'))}}">
     </head>
     <body>
+        <h3>Games Premiere Timeline - Click on picture to open trailer</h3>
         <div id="visualization"></div>
         <script type="text/javascript">
             const xhttp = new XMLHttpRequest();
@@ -32,7 +33,7 @@
                         item: 'top'
                     },
                     template: function (item, element, data) {
-                        console.log(item);
+                        //console.log(item);
                         return '<div>' +
                             '<table>' +
                             '<tr>' +
@@ -42,8 +43,9 @@
                             '</tr>' +
                             '<tr>' +
                             '<td>' +
-                            '<img src="'+item.img+'" alt="'+item.title+'"/>' +
-                            '</td>' +
+                            '<a href="'+item.link+'" target="_blank">' +
+                            '<img src="'+item.img+'" alt="'+item.content+'"/>' +
+                            '</a>' +
                             '</tr>' +
                             '<tr>' +
                             '<td>' +

@@ -22,6 +22,7 @@ class Data
                 $game->setDate(new \DateTime($data[1]));
                 $game->setDescription($data[2]);
                 $game->setImg($data[3]);
+                $game->setTrailer($data[4]);
                 $this->games[] = $game;
                 $num = count($data);
             }
@@ -55,6 +56,7 @@ class Data
                 'title' => $game->getName(),
                 'content' => $game->getDescription(),
                 'img' => $game->getImg(),
+                'link' => $game->getTrailer(),
                 'start' => $game->getDate()->format('Y-m-d')
             ];
             $this->jsonGames[] = $json;
