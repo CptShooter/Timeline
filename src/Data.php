@@ -20,9 +20,8 @@ class Data
                 $game = new Game();
                 $game->setName($data[0]);
                 $game->setDate(new \DateTime($data[1]));
-                $game->setDescription($data[2]);
-                $game->setImg($data[3]);
-                $game->setTrailer($data[4]);
+                $game->setImg($data[2]);
+                $game->setTrailer($data[3]);
                 $this->games[] = $game;
                 $num = count($data);
             }
@@ -44,6 +43,22 @@ class Data
         return $this;
     }
 
+    public function removeGamesOlderThan($days = 60)
+    {
+        $now = new \DateTime('now');
+        /** @var Game $game */
+        foreach($this->games as $key => $game)
+        {
+            if ($game->getDate() instanceof \DateTime) {
+                $diff = $game->getDate()->diff($now);
+                if ($diff->invert == 0 && $diff->days > 60) {
+                    unset($this->games[$key]);
+                }
+            }
+        }
+        return $this;
+    }
+
     public function buildJson(): Data
     {
         $id = 0;
@@ -54,7 +69,7 @@ class Data
             $json = [
                 'id' => $id,
                 'title' => $game->getName(),
-                'content' => $game->getDescription(),
+                'content' => $game->getName(),
                 'img' => $game->getImg(),
                 'link' => $game->getTrailer(),
                 'start' => $game->getDate()->format('Y-m-d')

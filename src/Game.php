@@ -6,7 +6,6 @@ class Game
 {
     private string $name;
     private \DateTime $date;
-    private string $description;
     private string $img;
     private string $trailer;
 
@@ -40,22 +39,6 @@ class Game
     public function setDate(\DateTime $date): void
     {
         $this->date = $date;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDescription(): string
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param string $description
-     */
-    public function setDescription(string $description): void
-    {
-        $this->description = $description;
     }
 
     /**
