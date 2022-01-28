@@ -51,7 +51,7 @@ class Data
         {
             if ($game->getDate() instanceof \DateTime) {
                 $diff = $game->getDate()->diff($now);
-                if ($diff->invert == 0 && $diff->days > 60) {
+                if ($diff->invert == 0 && $diff->days > $days) {
                     unset($this->games[$key]);
                 }
             }
