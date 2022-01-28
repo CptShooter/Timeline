@@ -1,5 +1,9 @@
 ### Changelog
 
+#### **v 2.3**
+* Add The Settlers premiere
+* Change days to remove older games from 60 to 30
+
 #### **v 2.2**
 * Add more premieres for 2022
 * Auto remove premieres from timeline older than 60 days

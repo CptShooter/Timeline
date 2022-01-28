@@ -43,7 +43,7 @@ class Data
         return $this;
     }
 
-    public function removeGamesOlderThan($days = 60)
+    public function removeGamesOlderThan($days = 60) : self
     {
         $now = new \DateTime('now');
         /** @var Game $game */
