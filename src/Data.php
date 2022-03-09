@@ -43,7 +43,7 @@ class Data
         return $this;
     }
 
-    public function removeGamesOlderThan($days = 60) : self
+    public function removeGamesOlderThan($daysBefore = 60, $daysAhead = 90) : self
     {
         $now = new \DateTime('now');
         /** @var Game $game */
@@ -51,7 +51,10 @@ class Data
         {
             if ($game->getDate() instanceof \DateTime) {
                 $diff = $game->getDate()->diff($now);
-                if ($diff->invert == 0 && $diff->days > $days) {
+                if ($diff->invert == 0 && $diff->days > $daysBefore) {
+                    unset($this->games[$key]);
+                }
+                if ($diff->invert != 0 && $diff->days > $daysAhead) {
                     unset($this->games[$key]);
                 }
             }
