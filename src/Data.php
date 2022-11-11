@@ -19,11 +19,11 @@ class Data
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                 $game = new Game();
                 $game->setName($data[0]);
-                $game->setDate(new \DateTime($data[1]));
-                $game->setImg($data[2]);
-                $game->setTrailer($data[3]);
+                $game->setSubName($data[1]);
+                $game->setDate(new \DateTime($data[2]));
+                $game->setImg($data[3]);
+                $game->setTrailer($data[4]);
                 $this->games[] = $game;
-                $num = count($data);
             }
             fclose($handle);
         }
@@ -72,6 +72,7 @@ class Data
             $json = [
                 'id' => $id,
                 'title' => $game->getName(),
+                'sub_title' => $game->getSubName(),
                 'content' => $game->getName(),
                 'img' => $game->getImg(),
                 'link' => $game->getTrailer(),

@@ -1,7 +1,10 @@
 <?php
+
+use Timeline\Data;
+
 require_once '../vendor/autoload.php';
 
 header('Content-Type: application/json');
 
-$data = new \Timeline\Data();
-echo $data->removeGamesOlderThan(30, 90)->sortGamesByDate()->buildJson()->getGamesToJson();
+$data = new Data();
+echo $data->removeGamesOlderThan(15, 120)->sortGamesByDate()->buildJson()->getGamesToJson();
