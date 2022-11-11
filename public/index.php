@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h3>Games Premiere Timeline - Click on picture to open trailer</h3>
+        <h1 class="text-center">Shooter's Timeline</h1>
+        <h3 class="text-center">Games Premiere</h3>
         <div id="visualization"></div>
+        <p class="text-center" id="hint">click on picture to open trailer</p>
+        <p class="text-center" id="copyright">Copyright &copy; <?= date('Y') ?>. All Rights Reserved. Created by <a href="https://cptshooter.pl">Paweł Kiełt</a></p>
         <script type="text/javascript">
             const xhttp = new XMLHttpRequest();
             xhttp.onload = function() {

@@ -1,6 +1,25 @@
 body {
-    background-color: #414149;
+    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
     color: #FFFFFF;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#hint {
+    color: #b9b9b9
+}
+
+#copyright {
+    color: #8a8a8a
+}
+
+#copyright a{
+    color: #8a8a8a
 }
 
 .vis-time-axis .vis-text {
@@ -8,8 +27,12 @@ body {
 }
 
 .vis-item {
-    border-color: #000000;
-    background-color: #494b53;
+    border-color: #FFFFFF;
+    background-color: rgb(55, 55, 55);
+    background-image: linear-gradient(45deg, black 30%, transparent 30%, transparent 70%, black 70%, black), linear-gradient(45deg, black 30%, transparent 30%, transparent 70%, black 70%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(55, 55, 55));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    box-shadow: 0px 0px 25px #2CFF0099;
 }
 
 .vis-item.vis-selected {
@@ -35,4 +58,5 @@ body {
 
 .vis-item-content{
     height: 220px;
+    color: #FFFFFF;
 }
