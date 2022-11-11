@@ -5,7 +5,7 @@
         <title>Games Premiere Timeline</title>
         <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
         <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css?ver={{hash('crc32', date('h:i:s'))}}">
     </head>
     <body>
         <h1 class="text-center">Shooter's Timeline</h1>
