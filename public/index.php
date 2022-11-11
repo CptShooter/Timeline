@@ -5,7 +5,7 @@
         <title>Games Premiere Timeline</title>
         <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
         <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/style.css?ver={{hash('crc32', date('h:i:s'))}}">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <h3>Games Premiere Timeline - Click on picture to open trailer</h3>
@@ -26,7 +26,7 @@
                 let options = {
                     width: '100%',
                     margin: {
-                        item: 20
+                        item: 10
                     },
                     orientation: {
                         axis: 'top',
@@ -39,6 +39,11 @@
                             '<tr>' +
                             '<td>' +
                             '<span>'+item.title+'</span>' +
+                            '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<td>' +
+                            '<span>'+item.sub_title+'</span>' +
                             '</td>' +
                             '</tr>' +
                             '<tr>' +

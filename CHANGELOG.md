@@ -1,5 +1,13 @@
 ### Changelog
 
+#### **v 3.0**
+* Add more premieres for 2023
+* Change days to remove older games from 30 to 15
+* Change max days ahead from 90 to 120
+* Split name for name and subname
+* Change size of boxes
+* Add docker compose for local usage
+
 #### **v 2.3**
 * Add The Settlers premiere
 * Change days to remove older games from 60 to 30

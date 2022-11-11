@@ -19,12 +19,12 @@ body {
 }
 
 .vis-item-content div img {
-    width: 70px;
-    max-height: 100px;
+    width: 90px;
+    max-height: 120px;
 }
 
 .vis-item-content div {
-    width: 200px;
+    width: 150px;
 }
 
 .vis-item-content div table {
@@ -34,5 +34,5 @@ body {
 }
 
 .vis-item-content{
-    height: 170px;
+    height: 220px;
 }

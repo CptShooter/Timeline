@@ -5,6 +5,7 @@ namespace Timeline;
 class Game
 {
     private string $name;
+    private string $subName;
     private \DateTime $date;
     private string $img;
     private string $trailer;
@@ -24,6 +25,23 @@ class Game
     {
         $this->name = $name;
     }
+
+    /**
+     * @return string
+     */
+    public function getSubName(): string
+    {
+        return $this->subName;
+    }
+
+    /**
+     * @param string $subName
+     */
+    public function setSubName(string $subName): void
+    {
+        $this->subName = $subName;
+    }
+
 
     /**
      * @return \DateTime
