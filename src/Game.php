@@ -60,6 +60,20 @@ class Game
     }
 
     /**
+     * @return \DateTime
+     * @throws \Exception
+     */
+    public function addRandomTime(): \DateTime
+    {
+        $hoursToAdd = random_int(1,12);
+        $minutesToAdd = random_int(1,59);
+        $secondsToAdd = random_int(1,59);
+        $this->date->add(new \DateInterval('PT'.$hoursToAdd.'H'.$minutesToAdd.'M'.$secondsToAdd.'S'));
+
+        return $this->date;
+    }
+
+    /**
      * @return string
      */
     public function getImg(): string

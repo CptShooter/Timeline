@@ -16,7 +16,7 @@ class Data
     private function getCSV() : void
     {
         if (($handle = fopen($this->filename, "r")) !== FALSE) {
-            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+            while (($data = fgetcsv($handle, 2000, ",")) !== FALSE) {
                 $game = new Game();
                 $game->setName($data[0]);
                 $game->setSubName($data[1]);
@@ -29,6 +29,10 @@ class Data
         }
     }
 
+    /**
+     * @return $this
+     * @throws \Exception
+     */
     public function sortGamesByDate() : Data
     {
         $sorted = [];
@@ -36,6 +40,9 @@ class Data
         foreach($this->games as $game)
         {
             $timestamp = $game->getDate()->getTimestamp();
+            if ( isset($sorted[$timestamp]) ){
+                $timestamp = $game->addRandomTime()->getTimestamp();
+            }
             $sorted[$timestamp] = $game;
         }
         ksort($sorted);
