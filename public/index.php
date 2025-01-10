@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Games Premiere Timeline</title>
-        <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-        <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/vis-timeline-graph2d.min.js"></script>
+        <link href="css/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/style.css?ver={{hash('crc32', date('h:i:s'))}}">
     </head>
     <body>
