@@ -16,7 +16,7 @@ class Data
     private function getCSV() : void
     {
         if (($handle = fopen($this->filename, "r")) !== FALSE) {
-            while (($data = fgetcsv($handle, 2000, ",")) !== FALSE) {
+            while (($data = fgetcsv($handle, 2000, ",", escape: "")) !== FALSE) {
                 $game = new Game();
                 $game->setName($data[0]);
                 $game->setSubName($data[1]);
